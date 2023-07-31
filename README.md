@@ -15,6 +15,8 @@ Finally, the jammer must operate on the same frequency as the sensor to ensure t
 
 If the hacker succeeds, when the two cars approach the stop sign, the victim's car will crash into the hacker because the victim’s car fails to detect the hacker’s car. 
 
+For future work, one could have the user control the voltage, aim the jammer, and even have to steer the car. To have a successful attack, a person would have to do all of this at once which shows that a jamming attack is possible but quite difficult.
+
 
 
 https://github.com/AKWOK15/Jamming-Attack-Simulation/assets/121518425/a1d6b3d2-a9bc-4854-a6c6-f2104c9193ef

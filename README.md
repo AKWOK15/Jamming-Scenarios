@@ -17,13 +17,6 @@ If the hacker succeeds, when the two cars approach the stop sign, the victim's c
 
 
 
-
-https://github.com/AKWOK15/Jamming-Attack-Simulation/assets/121518425/9e1566b3-7a50-472e-be4b-021b0fc28e02
-
-
-
-
-
 https://github.com/AKWOK15/Jamming-Attack-Simulation/assets/121518425/a1d6b3d2-a9bc-4854-a6c6-f2104c9193ef
 
 

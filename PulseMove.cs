@@ -11,11 +11,13 @@ namespace VRAVE
         //How far the pulses can go in front of the victim car before they get deleted
         private float DeadZone;
         private CarController controls
+        //How fast car is moving
         private float moveSpeed;
         private GameObject car;
         public bool isUser;
         private PulseSpawner pulseSpawnerObject;
         private PulseSpawner script;
+        //Used to change the color of the pulses
         private Renderer rend;
         // Start is called before the first frame update
 

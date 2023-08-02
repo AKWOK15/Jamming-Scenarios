@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.SceneManagement;
-
+//Only gets used in victim scenario if player presses "A" on ocolus controller to swtich from AI (autonomous) to manual 
 namespace VRAVE
 {
     //Necessary requirement?

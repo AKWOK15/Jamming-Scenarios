@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using UnityStandardAssets.Vehicles.Car;
-
+// CarAIControl or CarUserControl uses variables stored here to determine how they should drive
 namespace VRAVE
 {
 	internal enum CarDriveType

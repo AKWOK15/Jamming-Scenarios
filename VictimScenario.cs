@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 using VRStandardAssets.Utils;
 //Need to use this to modify RawImage because it is a material that renders a graphic 
 using UnityEngine.UI;
-
+//First scenario where the player is the victim of a jamming attack
 namespace VRAVE
 {
 
@@ -33,10 +33,8 @@ namespace VRAVE
 		{
             //If car is user and player presses "A"
             if (UserCar.GetComponent<CarAIControl>().isUser() && OVRInput.Get(OVRInput.Button.One))
-            //if(Input.GetKeyDown(KeyCode.Space) && UserCar.GetComponent<CarAIControl>().isUser())
             {
 				
-				//Debug.Log("A button pressed");
 				//Name of audio file: changing-to-manual-mode
 				//Files being played can be found in ReactionTimeAudioModel.cs
 				audioController.playAudio(1);
@@ -50,12 +48,13 @@ namespace VRAVE
 
 			}
 			if (UserCar.GetComponent<AICarCollisionChecker>().isCollision == true || UserCar.GetComponent<CarUserControl>().enabled == true && UserCar.GetComponent<CarUserControl>().m_Driving == false)
-            {
+            {			//Calls method changeScene() after waiting four seconds
 				Invoke("changeScene", 4);
 			}
 
 			
 		}
+  		//Change scene to the one that has instructions for the frequency scenario
 		private void changeScene()
         {
 			SceneManager.LoadScene("InstructionsFrequency");
@@ -102,6 +101,7 @@ namespace VRAVE
 
 
 		}
+  		//Used to put cars in correct position as well as determine which cars appear in the scenario 
 		private void resetIntersectionScenario()
 		{
 			UserCar.SetActive(true);

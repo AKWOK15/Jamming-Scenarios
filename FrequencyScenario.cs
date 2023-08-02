@@ -9,7 +9,7 @@ using UnityEngine.UI;
 using UnityStandardAssets.Utility;
 
 
-
+//Scenario where player is the hacker and adjusts the frequency to try and jam the car behind it
 namespace VRAVE
 {
 
@@ -17,14 +17,16 @@ namespace VRAVE
 	{
 		[SerializeField] private GameObject UserCar;
 		[SerializeField] private GameObject UnsuspectingAI;
-		//Screen that victim's car will show and will appear as the right screen in the user's car
+		//Screen that represents what victim's ultrasonic sensors see and will appear as the right screen in the user's car
+  		[SerializeField] private GameObject victimScreen;
+    		//Camera that is used to capture what victim's ultrasonic sensors would see
 		[SerializeField] private GameObject victimScreenCamera;
-		[SerializeField] private GameObject victimScreen;
-		// This texture is used to change the left screen of the user's car to the side view of the pulse
-		[SerializeField] private Texture sideView;
-		//Texture that victimSreenCamera produces and is then displayed on the victimScreen
+  		//Texture that victimSreenCamera produces and is then displayed on the victimScreen
 		[SerializeField] private Texture victimView;
-		//Need this because this scenario has a default of no collision whereas first scneario where user gets hacked always has collision
+		// This texture is used to change the left screen of the user's car to the side view of the pulses
+		[SerializeField] private Texture sideView;
+		//Need this because this scenario has a default of no collision, if victim gets jammed, need to change the second waypoint of the victim's
+  		//car to have a collision 
 		[SerializeField] private WaypointCircuit circuit;
 		//Slider object found in the canvas of the player
 		[SerializeField] private Slider slider;
@@ -41,9 +43,8 @@ namespace VRAVE
 		//Waypoint that gets changed if user jams AI vehicle
 		private GameObject waypoint;
 		private Vector3 pos;
-
-        private CarController carController;
-        private CarController carAIController;
+		private CarController carController;
+		private CarController carAIController;
 
 
 
@@ -52,15 +53,16 @@ namespace VRAVE
 
         void Update()
 		{
-			//Sets spawnRate of user car equals to the value of the slider, this refers to object that script is attached to
+			//Sets pulse spawnRate of user car equal to the value of the slider, "this" refers to object that script is attached to
 			this.transform.GetChild(0).gameObject.GetComponent<PulseSpawner>().spawnRate = slider.value;
-			// If user successfuly jams, AI car has its waypoint 001's z coordinate changed so that cars get into a crash
+			// If user successfuly jams, AI car has its waypoint 001's (second waypoint) z coordinate changed so that cars get into a crash
 			if (slider.value >= 40 && slider.value <= 50)
             {
 				changeRawImage("VictimScreen", null);
                 pos.z = 60;
                 waypoint.transform.position = pos;
             }
+	    		//Victim screen remains unaffected and still shows objects since jamming attack is unsuccessful 
 			else
             {
 				changeRawImage("VictimScreen", victimView);
@@ -80,7 +82,7 @@ namespace VRAVE
 
         }
 
-        //Changes texture of RawImage of different screens (gives them a different camera view)
+        //Changes texture of RawImage of different screens (gives the screen a different camera view)
         private void changeRawImage(string screenName, Texture texture)
 		{
 			GameObject canvas;
@@ -121,7 +123,7 @@ namespace VRAVE
 			hudAsyncController.Configure(audioController, hudController);
 
          
-            unsuspectingCarAI = UnsuspectingAI.GetComponent<CarAIControl>();
+            		unsuspectingCarAI = UnsuspectingAI.GetComponent<CarAIControl>();
 			carAIController = UnsuspectingAI.GetComponent<CarController>();
 
 			//Changes user tv screen to show side profile of cars
@@ -134,7 +136,7 @@ namespace VRAVE
 
 
 		}
-
+		//Used to put cars in correct position as well as determine which cars appear in the scenario  
 		private void resetIntersectionScenario()
 		{
 			UserCar.SetActive(true);
@@ -151,8 +153,6 @@ namespace VRAVE
 			UnsuspectingAI.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
 			hudController.Clear();
 	
-
-
 		}
 
 

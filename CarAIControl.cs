@@ -5,7 +5,7 @@ using UnityStandardAssets.Utility;
 using UnityStandardAssets.Vehicles;
 using System.Collections.Generic;
 
-
+// Controls the car without any required user input, automically accelerates the car once the simulation begins and then stops based on waypoints 
 namespace VRAVE
 {
 	//	[RequireComponent(typeof (CarController))]
@@ -138,24 +138,6 @@ namespace VRAVE
         }
         private void FixedUpdate ()
 		{
-			//Debug.Log("CarController: " + m_CarController);
-			//If IsUser == true and user presses "A" button on Ocolous controller
-			//if (IsUser && OVRInput.Get(OVRInput.Button.One))
-   //         {
-			//	//Debug.Log("A button pressed");
-			//	//Name of audio file: changing-to-manual-mode
-			//	//Files being played can be found in ReactionTimeAudioModel.cs
-			//	audioController.playAudio(1);
-			//	GetComponent<CarUserControl>().enabled = true;
-			//	//Calls CarUserControl
-			//	GetComponent<CarUserControl>();
-
-   //             GetComponent<CarAIControl>().enabled = false;
-			
-
-			//}
-			////Delays calling changeRawImage() by two seconds, which creates the effect of a jamming attack
-			//Invoke("changeRawImage", 2);
             if (m_Target == null || !m_Driving) {
 				// Car should not be moving,
 				// use handbrake to stop

@@ -1,5 +1,5 @@
 # Jamming-Attack-Simulation
-For the summer of 2023, Dr. Sandip Ray accepted me into his Secure, Sustainable, and Accessible Transportation REU (Research for Experience Undergraduate) program, funded by the National Science Foundation. For my project, I focused on the secure part by researching cybersecurity challenges for autonomous vehicles. Specifically, what a jamming attack on vehicle ultrasonic sensors would look like in the eyes of both the victim and hacker. 
+For the summer of 2023, Dr. Sandip Ray accepted me into his Secure, Sustainable, and Accessible Transportation REU (Research for Experience Undergraduate) program, funded by the National Science Foundation. For my project, I researched cybersecurity challenges for autonomous vehicles. Specifically, what a jamming attack on vehicle ultrasonic sensors would look like in the eyes of both the victim and hacker. 
 
 To best do this, Richard Owoputi, my Ph.D. mentor, decided to put the player through a VR scenario built by Unity. He laid down the basics, such as the cars, the overall map, and the car movement. I then built on this to create a victim and hacker scenario to help the user learn about jamming attacks.
 

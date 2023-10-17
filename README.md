@@ -13,8 +13,7 @@ To best do this, Richard Owoputi, my Ph.D. mentor, decided to put the player thr
 [Unity.com]:https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white
 [Oculus.com]:https://a11ybadges.com/badge?logo=oculus
 [VisualStudio.com]:https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
-[C#.com]:https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
-
+[C#.com]:https://a11ybadges.com/badge?logo=csharp
 ## Rationale Behind the Simulation
 During a jamming attack, the victim’s car fails to detect the attack and therefore cannot alert the victim. This occurs because the ultrasonic sensors think that no objects exist around the car. To mimic this in my simulation, the victim’s car screen turns white when their car’s sensors become jammed. When not jammed, the screen depicts a view from the front of the car.
 

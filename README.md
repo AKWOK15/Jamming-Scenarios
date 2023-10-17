@@ -14,7 +14,7 @@ To best do this, Richard Owoputi, my Ph.D. mentor, decided to put the player thr
 [C#.com]:https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
 
 ## Rationale Behind the Simulation
-The victim’s car fails to detect the attack and therefore cannot alert the victim. Instead, the ultrasonic sensors would simply think that no objects exist around the car. To mimic this in my simulation, the victim’s car screen turns white when their car’s sensors become jammed. When not jammed, the screen depicts a view from the front of the car.
+During a jamming attack, the victim’s car fails to detect the attack and therefore cannot alert the victim. This occurs because the ultrasonic sensors think that no objects exist around the car. To mimic this in my simulation, the victim’s car screen turns white when their car’s sensors become jammed. When not jammed, the screen depicts a view from the front of the car.
 
 For the jamming attack to be successful, the jammer must be within 10 meters of the ultrasonic sensors, be aimed at the ultrasonic sensors, have a higher voltage power than the ultrasonic sensor, and be on the same frequency as the ultrasonic sensor, Since, I was not able to conduct real life jamming tests, I primarily depended on this paper to figure out the jammer requirements: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8451864&tag=1. 
 

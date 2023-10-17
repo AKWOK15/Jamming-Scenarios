@@ -11,7 +11,7 @@ To best do this, Richard Owoputi, my Ph.D. mentor, decided to put the player thr
 ![C#][C#.com]
 
 [Unity.com]:https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white
-[Oculus.com]:!https://a11ybadges.com/badge?logo=oculus
+[Oculus.com]:https://a11ybadges.com/badge?logo=oculus
 [VisualStudio.com]:https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
 [C#.com]:https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white
 

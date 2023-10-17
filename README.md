@@ -5,10 +5,10 @@ For the summer of 2023, Dr. Sandip Ray accepted me into his Secure, Sustainable,
 To best do this, Richard Owoputi, my Ph.D. mentor, decided to put the player through a VR scenario built by Unity. He laid down the basics, such as the cars, the overall map, and the car movement. I then built on this to create a victim and hacker scenario to help the user learn about jamming attacks.
 
 ## Built With
+![C#][C#.com]\
 ![Unity][Unity.com] \
 ![Oculus][Oculus.com] \
-![VisualStudio][VisualStudio.com] \
-![C#][C#.com]
+![VisualStudio][VisualStudio.com]
 
 [Unity.com]:https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white
 [Oculus.com]:https://a11ybadges.com/badge?logo=oculus

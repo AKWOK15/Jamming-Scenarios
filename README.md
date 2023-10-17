@@ -6,7 +6,7 @@ To best do this, Richard Owoputi, my Ph.D. mentor, decided to put the player thr
 
 ## Built With
 ![Unity][Unity.com]/
-![VisuallStudio][VisaulStudio.com]/
+![VisualStudio][VisualStudio.com]/
 ![C#][C#.com]
 
 [Unity.com]:https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white
